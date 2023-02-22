@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- 更改網頁圖標和標題 -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <title>PAIR桌覓 - 桌遊揪團訂位</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <script>
+      // PWA判定
+      // if('serviceWorker' in navigator) {
+      //   console.log('Will service worker register?')
+      //   navigator.serviceWorker.register('service-worker.js').then(function(reg){
+      //     console.log('Yes it did.');
+      //   }).catch(function(err){
+      //     console.log("No it didn't. This heppened:",err);
+      //   })
+      // }
+    </script>
+  </body>
+</html>
+
+<!-- Google Map API -->
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMmXxRmy4M8Kqz5nIAjadiTXpewev_II4"
+></script>
+
+<style>
+  body {
+    font-family: "Inter", sans-serif;
+  }
+</style>
